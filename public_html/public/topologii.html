@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/mine.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+<body>
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="text-muted" href="#">Прытков Данил ПО-31</a>
+            </div>
+            <div class="col-8 text-center">
+                <a class="blog-header-logo text-dark" href="#">Основы работы сетей</a>
+            </div>
+            <!--            <div class="col-4 d-flex justify-content-end align-items-center">-->
+            <!--                <a class="text-muted" href="#" aria-label="Search">-->
+            <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>-->
+            <!--                </a>-->
+            <!--                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>-->
+            <!--            </div>-->
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="index.html">История появления и развития компьютерных сетей</a>
+            <a class="p-2 text-muted" href="#">Виды топологий компьютерных сетей</a>
+
+        </nav>
+    </div>
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark row">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">Топологии компьютерных сетей</h1>
+            <p class="lead my-3">По материалам книги В.Г. Олифер, Н.А. Олифер «Компьютерные сети. Принципы,
+                технологии, протоколы», 4 издание.</p>
+            <p class="lead mb-0"><a href="#start" class="text-white font-weight-bold">В начало статьи ...</a></p>
+        </div>
+
+        <div class="col-md-6">
+            <img class="img-fluid" src="img/comp_s.png" alt="Компьютерная сеть">
+        </div>
+    </div>
+</div>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <!--            <h3 class="pb-4 mb-4 font-italic border-bottom">-->
+            <!--&lt;!&ndash;                From the Firehose&ndash;&gt;-->
+            <!--            </h3>-->
+
+            <div class="blog-post">
+                <!--                <h2 class="blog-post-title">Sample blog post</h2>-->
+                <!--                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>-->
+                <h2 id="start">Топологии компьютерных сетей</h2>
+                <p>Под топологией (компоновкой, конфигурацией, структурой) компьютерной сети обычно понимается
+                    физическое расположение компьютеров сети один относительно одного и способ соединения их линиями
+                    связи. Важно отметить, что понятие топологии относится, в первую очередь, к локальным сетям, в
+                    которых структуру связей можно легко проследить.
+                </p>
+                <p>Топология определяет требования к оборудованию, тип используемого кабеля, возможные и наиболее
+                    удобные методы управления обменом, надежность работы, возможности расширения сети.</p>
+
+                <h3>Существует три основные топология сети:</h3>
+                <ol>
+                    <li><b>Сетевая топология шина (bus),</b> при которой все компьютеры параллельно подключаются к одной
+                        линии связи и информация от каждого компьютера одновременно передается всем другим компьютерам
+                        (рис. 1);
+                        <div class="text-center pt-2 pb-4">
+                            <img style="height: 100px; width: auto;" src="img/4.gif" alt="">
+                        </div>
+                        <table class="table table-bordered ">
+                            <tr>
+                                <td>Достоинства</td>
+                                <td>Недостатки</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Отказ любой из рабочих станций не влияет на работу всей сети.</li>
+                                        <li>Простота и гибкость соединений.</li>
+                                        <li>Недорогой кабель и разъемы.</li>
+                                        <li>Необходимо небольшое количество кабеля.</li>
+                                        <li>Прокладка кабеля не вызывает особых сложностей.</li>
+                                    </ul>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Разрыв кабеля, или другие неполадки в соединении может исключить нормальную работу всей сети.</li>
+                                        <li>Ограниченная длина кабеля и количество рабочих станций.</li>
+                                        <li>Трудно обнаружить дефекты соединений.</li>
+                                        <li>Невысокая производительность.</li>
+                                        <li>При большом объеме передаваемых данных главный кабель может не справляться с потоком информации, что приводит к задержкам.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <li><b>Cетевая топология звезда (star),</b> при которой к одному центральному компьютеру
+                        присоединяются другие периферийные компьютеры, причем каждый из них использует свою отдельную
+                        линию связи (рис. 2);
+                        <div class="text-center pt-2 pb-4">
+                            <img style="height: 200px; width: auto;" src="img/5.gif" alt="">
+                        </div>
+                        <table class="table table-bordered ">
+                            <tr>
+                                <td>Достоинства</td>
+                                <td>Недостатки</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Подключение новых рабочих станций не вызывает особых затруднений.</li>
+
+                                        <li>Возможность мониторинга сети и централизованного управления сетью</li>
+
+                                        <li>При использовании централизованного управления сетью локализация дефектов соединений максимально упрощается.</li>
+
+                                        <li>Хорошая расширяемость и модернизация.</li>
+                                    </ul>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Отказ концентратора приводит к отключению от сети всех рабочих станций, подключенных к ней.</li>
+
+                                        <li>Достаточно высокая стоимость реализации, т.к. требуется большое количество кабеля.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <li><b>Cетевая топология кольцо (ring),</b> при которой каждый компьютер передает информацию всегда
+                        только одному компьютеру, следующему в цепочке, а получает информацию только от предыдущего
+                        компьютера в цепочке, и эта цепочка замкнута в «кольцо» (рис. 3).
+                        <div class="text-center pt-2 pb-4">
+                            <img style="height: 200px; width: auto;" src="img/6.gif" alt="">
+                        </div>
+                        <table class="table table-bordered ">
+                            <tr>
+                                <td>Достоинства</td>
+                                <td>Недостатки</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Простота установки;</li>
+                                        <li>Практически полное отсутствие дополнительного оборудования;</li>
+                                        <li>Возможность устойчивой работы без существенного падения скорости передачи данных при интенсивной загрузке сети, поскольку использование маркера исключает возможность возникновения коллизий.</li>
+                                    </ul>
+
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Выход из строя одной рабочей станции и другие неполадки отражаются на работоспособности всей сети;</li>
+                                        <li>Сложность конфигурирования и настройки;</li>
+                                        <li>Сложность поиска неисправностей;</li>
+                                        <li>Необходимость иметь две сетевые платы на каждой рабочей станции;</li>
+                                        <li>Добавление/удаление станции требует временной остановки работы сети.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+
+            </div><!-- /.blog-post -->
+
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="index.html">Назад</a>
+                <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Вперед</a>
+            </nav>
+
+        </div><!-- /.blog-main -->
+
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+    <p>
+        <a href="#">Вернуться наверх</a>
+    </p>
+</footer>
+
+
+<div class="mallbery-caa"
+     style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
